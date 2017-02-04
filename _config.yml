@@ -33,3 +33,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - CNAME
+sass:
+  sass_dir: assets/styles
+  style: compressed
