@@ -1,8 +1,19 @@
 ---
-# The main stylesheet
+# Main stylesheet
 ---
-@charset "utf-8"
+@charset 'utf-8'
 
-@import _base/normalize
-@import _base/variables
-@import _base/base
+@import helpers/variables
+@import helpers/functions
+@import helpers/mixins
+@import helpers/placeholders
+
+@import base/normalize
+@import base/base
+
+@import layout/header
+@import layout/footer
+
+@import components/buttons
+
+@import pages/home
