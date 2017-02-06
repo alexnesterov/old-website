@@ -33,6 +33,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - CNAME
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - assets/styles/main.sass
 sass:
   sass_dir: assets/styles
   style: compressed
