@@ -1,0 +1,79 @@
+.profile
+  position: absolute
+  left: 0
+  right: 0
+  height: 100%
+  min-height: 650px
+  overflow: hidden
+
+  &__inner
+    position: absolute
+    left: 0
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    max-width: 1170px
+    padding: 0 15px
+    margin: 0 auto
+    +clearfix()
+
+  &__left,
+  &__right
+    float: left
+
+  &__left
+    width: 45%
+
+  &__right
+    width: 55%
+    padding-top: 50px
+    padding-right: 30px
+
+  &__photo
+    width: 400px
+    margin: 0 auto
+
+    &.animated
+      transform-origin: bottom
+      animation-name: bounceIn
+      animation-delay: .6s
+      animation-duration: 1s
+      animation-fill-mode: backwards
+      transition-timing-function: ease-out
+
+  &__pic
+    display: block
+    max-width: 100%
+
+  &__info
+    padding: 50px
+    background: $background-color
+    transform-origin: center
+    transform: perspective(600px) rotateY(-7deg)
+
+  &__title
+    margin-bottom: 5px
+
+  &__text
+    overflow: hidden
+    margin-bottom: 10px
+    line-height: 1.6
+
+  &__desc
+    color: $grey-color-light
+
+  &__skills
+    margin-bottom: 15px
+
+// Animation
+@keyframes bounceIn
+
+  0%
+    transform: rotateX(90deg) skewX(30deg)
+
+  60%
+    transform: rotateX(-20deg) skewX(-5deg)
+
+  to
+    opacity: 1
+    transform: rotateX(0) skewX(0)

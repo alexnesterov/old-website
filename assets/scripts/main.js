@@ -16,7 +16,14 @@ $(function () {
       });
     }, 300);
   }
-  // hidePreloader();
+  hidePreloader();
+});
+
+// Profile
+$(function () {
+  var animatedItem = $('.profile__photo');
+
+  // animatedItem.addClass('animated');
 });
 
 });
