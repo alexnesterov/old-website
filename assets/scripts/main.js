@@ -16,7 +16,9 @@ $(function () {
       });
     }, 300);
   }
-  hidePreloader();
+  $(window).on('load', function() {
+    hidePreloader();
+  });
 });
 
 // Profile
