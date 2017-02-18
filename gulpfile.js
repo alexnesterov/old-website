@@ -4,6 +4,8 @@ const prefix = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
 const browserSync = require('browser-sync');
 const cp = require('child_process');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -38,8 +40,18 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('assets/styles/'));
 });
 
+// Compiles Scripts
+gulp.task('js', function () {
+  return gulp.src('assets/scripts/main.js')
+    .pipe(rename('main.pack.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('_site/assets/scripts'))
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('assets/scripts/'));
+});
+
 // Start server and watch
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
   browserSync({
     server: {
       baseDir: '_site'
@@ -48,7 +60,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
   gulp.watch('assets/styles/**/*', ['sass']);
   gulp.watch(['*.html', '*.md', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
-  gulp.watch(['assets/scripts/**/*'], ['jekyll-rebuild']);
+  gulp.watch(['assets/scripts/**/*'], ['js']);
 });
 
 // Run all things

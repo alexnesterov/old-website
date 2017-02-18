@@ -34,6 +34,7 @@ exclude:
   - gulpfile.js
   - package.json
   - assets/styles/main.sass
+  - assets/scripts/main.js
 sass:
   sass_dir: assets/styles
   style: compressed

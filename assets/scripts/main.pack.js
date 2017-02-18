@@ -1,0 +1,1 @@
+$(function(){console.log("OK!"),$(function(){function o(){t.fadeOut(),setTimeout(function(){e.fadeOut("slow",function(){n.css({overflow:"visible"}),e.remove()})},300)}var n=$(".page"),e=$(".preloader"),t=e.find(".preloader__status");$(window).on("load",function(){o()})}),$(function(){$(".profile__photo")})});
