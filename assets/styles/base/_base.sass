@@ -9,6 +9,14 @@ html
 *:after
   box-sizing: inherit
 
+::selection
+  color: $text-color
+  background: $accent-color
+
+::-moz-selection
+  color: $text-color
+  background: $accent-color
+
 *:focus
   outline: 5px auto $brand-color
 
