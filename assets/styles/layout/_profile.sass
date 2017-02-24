@@ -16,21 +16,23 @@
     padding: 0 15px
     margin: 0 auto
     +clearfix()
+    font-size: 0
 
   &__left,
   &__right
-    float: left
+    display: inline-block
+    vertical-align: middle
+    font-size: $base-font-size
 
   &__left
     width: 45%
 
   &__right
     width: 55%
-    padding-top: 50px
     padding-right: 30px
 
   &__photo
-    width: 400px
+    width: 500px
     margin: 0 auto
 
     &.animated
