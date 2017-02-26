@@ -45,6 +45,8 @@
     transform-origin: center
     transform: perspective(600px) rotateY(-10deg)
     transition: all .3s ease-out
+    &.animate
+      animation: infoAnimate 1s ease-out
     &:hover
       transform: perspective(600px) rotateY(0)
 
@@ -61,3 +63,10 @@
 
   &__skills
     margin-bottom: 20px
+
+// Info animation
+@keyframes infoAnimate
+  from
+    transform: perspective(600px) rotateY(-60deg)
+  to
+    transform: perspective(600px) rotateY(-10deg)

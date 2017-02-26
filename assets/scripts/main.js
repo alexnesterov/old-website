@@ -18,6 +18,7 @@ $(function () {
   }
   $(window).on('load', function() {
     hidePreloader();
+    $('.profile__info').addClass('animate');
   });
 });
 
