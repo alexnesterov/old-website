@@ -35,14 +35,6 @@
     width: 500px
     margin: 0 auto
 
-    &.animated
-      transform-origin: bottom
-      animation-name: bounceIn
-      animation-delay: .6s
-      animation-duration: 1s
-      animation-fill-mode: backwards
-      transition-timing-function: ease-out
-
   &__pic
     display: block
     max-width: 100%
@@ -69,16 +61,3 @@
 
   &__skills
     margin-bottom: 20px
-
-// Animation
-@keyframes bounceIn
-
-  0%
-    transform: rotateX(90deg) skewX(30deg)
-
-  60%
-    transform: rotateX(-20deg) skewX(-5deg)
-
-  to
-    opacity: 1
-    transform: rotateX(0) skewX(0)
