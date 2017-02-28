@@ -22,11 +22,4 @@ $(function () {
   });
 });
 
-// Profile
-$(function () {
-  var animatedItem = $('.profile__photo');
-
-  // animatedItem.addClass('animated');
-});
-
 });
