@@ -28,7 +28,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('sass', function () {
   return gulp.src('assets/styles/main.sass')
     .pipe(sass({
-      includePaths: ['scss'],
+      includePaths: ['scss', 'node_modules/susy/sass'],
       onError: browserSync.notify
     }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 9'], { cascade: true }))
