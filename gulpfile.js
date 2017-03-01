@@ -58,9 +58,9 @@ gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
     }
   });
 
-  gulp.watch('assets/styles/**/*', ['sass']);
+  gulp.watch('assets/styles/**/*.sass', ['sass']);
   gulp.watch(['*.html', '*.md', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
-  gulp.watch(['assets/scripts/**/*'], ['js']);
+  gulp.watch(['assets/scripts/**/*', '!assets/scripts/*.pack.js'], ['js']);
 });
 
 // Run all things
