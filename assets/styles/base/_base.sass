@@ -2,7 +2,7 @@ html
   box-sizing: border-box
   position: relative
   min-height: 100%
-  min-width: $content-width
+  min-width: 320px
 
 *,
 *:before,
@@ -11,7 +11,7 @@ html
 
 ::selection
   color: $text-color
-  background: $accent-color
+  background: rgba($accent-color, 0.99)
 
 ::-moz-selection
   color: $text-color
@@ -29,6 +29,6 @@ html
   background: #000
 
 .container
-  width: $content-width
+  max-width: 760px
   margin: 0 auto
-  padding: 0 10px
+  padding: 0 30px

@@ -2,54 +2,47 @@
 layout: default
 ---
 
-<div class="profile">
-  <div class="profile__inner">
-    <div class="profile__left">
-      <div class="profile__photo">
-        <img src="/assets/images/photo.png" alt="My photo" class="profile__pic">
+<div class="info">
+  <div class="container">
+    <div class="card">
+      <div class="card__title">
+        {% include wordmark.html %}
       </div>
-    </div>
-    <div class="profile__right">
-      <div class="profile__info">
-        <div class="profile__title">
-          {% include wordmark.html %}
-        </div>
-        <div class="profile__desc">
-          HTML-верстальщик / Frontend-разработчик
-        </div>
-        <div class="profile__text">
-          <p>Александр Нестеров. Веб-разработчик, в основном занимаюсь версткой и фронтендом. Живу в городе Сыктывкар, Республика Коми. Делаю сайты.</p>
-        </div>
-        <div class="profile__skills">
-          <div class="skills">
-            <div class="skills__item">HTML</div>
-            <div class="skills__item">CSS</div>
-            <div class="skills__item">JS</div>
-            <div class="skills__item">jQuery</div>
-            <div class="skills__item">Pug</div>
-            <div class="skills__item">Sass / Stylus</div>
-            <div class="skills__item">Gulp</div>
-            <div class="skills__item">Git</div>
-          </div>
-        </div>
-        <div class="profile__social">
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/{{ site.vk_username }}" target="_blank"><i class="fa fa-vk"></i>VK</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i>GitHub</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://t.me/{{ site.telegram_username }}" target="_blank"><i class="fa fa-telegram"></i>Telegram</a>
-            </li>
-          </ul>
-          <div class="mailto"><a href="mailto:{{ site.email }}" class="mailto__link"><i class="fa fa-envelope"></i>{{ site.email }}</a></div>
+      <div class="card__desc">
+        HTML-верстальщик / Frontend-разработчик
+      </div>
+      <div class="card__text">
+        <p>Александр Нестеров. Веб-разработчик, в основном занимаюсь версткой и фронтендом. Живу в городе Сыктывкар, Республика Коми. Делаю сайты.</p>
+      </div>
+      <div class="card__skills">
+        <div class="skills">
+          <div class="skills__item">HTML</div>
+          <div class="skills__item">CSS</div>
+          <div class="skills__item">JS</div>
+          <div class="skills__item">jQuery</div>
+          <div class="skills__item">Pug</div>
+          <div class="skills__item">Sass / Stylus</div>
+          <div class="skills__item">Gulp</div>
+          <div class="skills__item">Git</div>
         </div>
       </div>
+      <div class="card__social">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/{{ site.vk_username }}" target="_blank"><i class="fa fa-vk"></i>VK</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i>GitHub</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/{{ site.telegram_username }}" target="_blank"><i class="fa fa-telegram"></i>Telegram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card__mailto"><a href="mailto:{{ site.email }}" class="mailto"><i class="fa fa-envelope"></i><span class="mailto__title">{{ site.email }}</span></a></div>
     </div>
   </div>
 </div>

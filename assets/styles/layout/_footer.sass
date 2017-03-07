@@ -1,6 +1,8 @@
-// .page
-/* Padding bottom by footer height */
-// padding-bottom: $footer-height
+$footer-height: 120px
+
+.page
+  /* Padding bottom by footer height */
+  padding-bottom: $footer-height
 
 .footer
   position: absolute
@@ -8,4 +10,16 @@
   width: 100%
   /* Set the fixed height of the footer here */
   height: $footer-height
-  background: $grey-color
+  background: #000
+  text-align: center
+  font-size: 15px
+  line-height: $footer-height
+
+  &__copyright
+
+    a
+      color: inherit
+      text-decoration: none
+      &:hover
+        color: #000
+        background: $brand-color

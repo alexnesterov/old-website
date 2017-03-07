@@ -2,12 +2,20 @@
 <html lang="ru">
 {% include head.html %}
 <body class="page">
-  <div class="preloader">
-    <div class="logo preloader__status">
-      {% include logo.svg %}
+  {% include preloader.html %}
+  <div class="header">
+    <div class="container">
+      <div class="header__logo">
+        {% include logo.html %}
+      </div>
     </div>
   </div>
   {{ content }}
+  <div class="footer">
+    <div class="container">
+      <div class="footer__copyright">© 2017 / <a href="/">alexnesterov.ru</a></div>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="/assets/scripts/main.pack.js"></script>
 </body>

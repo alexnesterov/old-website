@@ -1,14 +1,14 @@
 .mailto
-  float: right
-  margin-top: -27px
+  display: inline-block
+  color: inherit
+  text-decoration: none
+  transition: color .2s ease-in-out
+  &:hover
+    color: $brand-color
 
-  &__link
-    color: inherit
-    text-decoration: none
-    transition: color .2s ease-in-out
-    &:hover
-      color: $brand-color
+    .mailto__title
+      padding-bottom: 3px
 
-    .fa
-      margin-right: 5px
-      border-bottom: none
+  .fa
+    margin-right: 5px
+    border-bottom: none
