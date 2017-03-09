@@ -8,16 +8,18 @@ $(function () {
   var item = preloader.find('.preloader__status');
 
   function hidePreloader() {
-    item.fadeOut();
+    item.fadeOut(500);
     setTimeout(function () {
-      preloader.fadeOut('slow', function() {
+      preloader.fadeOut(500, function() {
         page.css({'overflow':'visible'});
         preloader.remove();
       });
-    }, 300);
+    }, 500);
   }
   $(window).on('load', function() {
-    hidePreloader();
+    setTimeout(function () {
+      hidePreloader();
+    }, 200);
   });
 });
 

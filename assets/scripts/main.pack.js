@@ -1,1 +1,1 @@
-$(function(){console.log("OK!"),$(function(){function o(){t.fadeOut(),setTimeout(function(){e.fadeOut("slow",function(){n.css({overflow:"visible"}),e.remove()})},300)}var n=$(".page"),e=$(".preloader"),t=e.find(".preloader__status");$(window).on("load",function(){o()})})});
+$(function(){console.log("OK!"),$(function(){function o(){t.fadeOut(500),setTimeout(function(){e.fadeOut(500,function(){n.css({overflow:"visible"}),e.remove()})},500)}var n=$(".page"),e=$(".preloader"),t=e.find(".preloader__status");$(window).on("load",function(){setTimeout(function(){o()},200)})})});
