@@ -2,7 +2,7 @@ html
   box-sizing: border-box
   position: relative
   min-height: 100%
-  min-width: 320px
+  min-width: $container-min
 
 *,
 *:before,
@@ -26,9 +26,12 @@ html
   font-weight: $base-font-weight
   line-height: $base-line-height
   color: $text-color
-  background: #000
+  background: $bg-color
 
 .container
-  max-width: 760px
-  margin: 0 auto
-  padding: 0 30px
+  max-width: $container
+  margin-right: auto
+  margin-left: auto
+  padding-left: floor(($grid-gutter / 2))
+  padding-right: ceil(($grid-gutter / 2))
+  +clearfix

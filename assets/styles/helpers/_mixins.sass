@@ -1,7 +1,18 @@
 // Micro Clearfix
-// ------------------
 =clearfix
   &::after
     content: ''
     display: table
     clear: both
+
+// Grid - wrapper for columns
+// for columns use Susy, example:
+// +span(4 of 12)
+=grid($gutter: $grid-gutter)
+  margin-left: ceil(($gutter / -2))
+  margin-right: floor(($gutter / -2))
+  +clearfix
+
+=grid-col($gutter: $grid-gutter)
+  padding-left: floor(($gutter / 2))
+  padding-right: ceil(($gutter / 2))
