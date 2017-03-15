@@ -5,16 +5,15 @@ $(function(){
 $(function () {
   var page = $('.page');
   var preloader = $('.preloader');
-  var item = preloader.find('.preloader__status');
 
   function hidePreloader() {
-    item.fadeOut(500);
+    preloader.addClass('-loaded');
     setTimeout(function () {
-      preloader.fadeOut(500, function() {
+      preloader.fadeOut(700, function() {
         page.css({'overflow':'visible'});
         preloader.remove();
       });
-    }, 500);
+    }, 800);
   }
   $(window).on('load', function() {
     setTimeout(function () {
