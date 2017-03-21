@@ -10,9 +10,30 @@
       </div>
     </div>
   </div>
-  {{ content }}
+  <div class="main">
+    {{ content }}
+  </div>
   <div class="footer">
     <div class="container">
+      <div class="footer__social">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/{{ site.vk_username }}" target="_blank"><i class="fa fa-vk"></i>VK</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i>GitHub</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/{{ site.telegram_username }}" target="_blank"><i class="fa fa-telegram"></i>Telegram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__mailto">
+        <a href="mailto:{{ site.email }}" class="mailto"><i class="fa fa-envelope"></i><span class="mailto__title">{{ site.email }}</span></a>
+      </div>
       <div class="footer__copyright">© 2017 / <a href="/">alexnesterov.ru</a></div>
     </div>
   </div>

@@ -5,12 +5,18 @@ $(function(){
 $(function () {
   var page = $('.page');
   var preloader = $('.preloader');
+  var preloaderSpinner = $('.preloader__spinner');
+  var scrollValue = $(document).scrollTop();
 
   function hidePreloader() {
-    preloader.addClass('-loaded');
+    if (scrollValue === 0) {
+      preloader.addClass('-loaded');
+    }
+    else {
+      preloaderSpinner.fadeOut(1000);
+    }
     setTimeout(function () {
       preloader.fadeOut(700, function() {
-        page.css({'overflow':'visible'});
         preloader.remove();
       });
     }, 800);

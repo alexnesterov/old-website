@@ -2,23 +2,26 @@
   text-align: center
 
   &__title
-    font-size: 36px
+    margin: 0
+    text-transform: uppercase
+    font-size: 30px
     font-weight: 600
     line-height: 1.1
-    margin-bottom: 5px
+    margin-bottom: 12px
 
   &__desc
+    text-transform: uppercase
     color: $grey-color-light
-    line-height: 1.2
-    margin-bottom: 5px
+    line-height: 1
+    margin-bottom: 2px
+    &:after
+      content: ''
+      display: block
+      width: 100px
+      height: 2px
+      background: $brand-prime
+      margin: 28px auto 0
+      border-radius: 2px
 
   &__text
     overflow: hidden
-    margin-bottom: 10px
-    line-height: 1.6
-
-  &__skills
-    margin-bottom: 20px
-
-  &__social
-    margin-bottom: 20px

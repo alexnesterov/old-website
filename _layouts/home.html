@@ -5,42 +5,56 @@ layout: default
 <div class="info">
   <div class="container">
     <div class="card">
-      <div class="card__title">Александр Нестеров</div>
+      <h1 class="card__title">Александр Нестеров</h1>
       <div class="card__desc">
-        HTML-верстальщик / Frontend-разработчик
+        Веб-разработчик
       </div>
       <div class="card__text">
-        <p>Веб-разработчик, в основном занимаюсь версткой и фронтендом.<br>Живу в городе Сыктывкар, Россия. Делаю сайты.</p>
+        <p>Специализируюсь на фронтенде.<br>Верстаю, перевожу дизайн-макеты в код. Делаю несложные сайты.<br>Перфекционист, люблю веб и минимализм.</p>
       </div>
-      <div class="card__skills">
-        <div class="skills">
-          <div class="skills__item">HTML</div>
-          <div class="skills__item">CSS</div>
-          <div class="skills__item">JS</div>
-          <div class="skills__item">jQuery</div>
-          <div class="skills__item">Pug</div>
-          <div class="skills__item">Sass / Stylus</div>
-          <div class="skills__item">Gulp</div>
-          <div class="skills__item">Git</div>
-        </div>
+    </div>
+  </div>
+</div>
+
+<div class="skills">
+  <div class="container">
+    <div class="skills__wrap">
+      <div class="skills__item">
+        HTML
+        {% include skills_svg/html-5.svg %}
       </div>
-      <div class="card__social">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/{{ site.vk_username }}" target="_blank"><i class="fa fa-vk"></i>VK</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github"></i>GitHub</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://t.me/{{ site.telegram_username }}" target="_blank"><i class="fa fa-telegram"></i>Telegram</a>
-          </li>
-        </ul>
+      <div class="skills__item">
+        CSS
+        {% include skills_svg/css-3.svg %}
       </div>
-      <div class="card__mailto"><a href="mailto:{{ site.email }}" class="mailto"><i class="fa fa-envelope"></i><span class="mailto__title">{{ site.email }}</span></a></div>
+      <div class="skills__item">
+        JS
+        {% include skills_svg/javascript.svg %}
+      </div>
+      <div class="skills__item">
+        jQuery
+        {% include skills_svg/jquery.svg %}
+      </div>
+      <div class="skills__item">
+        Pug
+        {% include skills_svg/pug.svg %}
+      </div>
+      <div class="skills__item">
+        Sass
+        {% include skills_svg/sass.svg %}
+      </div>
+      <div class="skills__item">
+        Gulp
+        {% include skills_svg/gulp.svg %}
+      </div>
+      <div class="skills__item">
+        Git
+        {% include skills_svg/git.svg %}
+      </div>
+      <div class="skills__item">
+        Svg
+        {% include skills_svg/svg.svg %}
+      </div>
     </div>
   </div>
 </div>
