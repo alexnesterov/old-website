@@ -16,3 +16,25 @@
 =grid-col($gutter: $grid-gutter)
   padding-left: floor(($gutter / 2))
   padding-right: ceil(($gutter / 2))
+
+// Link hover effect
+=link-hover()
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -1
+    background: $brand-prime
+    opacity: 0
+    transform-origin: left
+    transform: scaleX(0) skewY(-1deg) translateY(2px)
+    transition: all .25s ease-in-out
+  &:hover
+    &:before
+      opacity: 1
+      transform: scaleX(1) skewY(-1deg) translateY(2px)
