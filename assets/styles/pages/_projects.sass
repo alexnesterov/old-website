@@ -1,0 +1,81 @@
+.projects
+  &__head
+    margin: 0
+    margin-bottom: 60px
+    text-align: center
+    font-size: 46px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 1
+    letter-spacing: 8px
+    color: $grey-color
+
+  &__item
+    padding-top: 25px
+    margin-bottom: 25px
+    border-top: 1px solid $grey-color-dark
+    +clearfix
+    &:first-child
+      padding-top: 0
+      border-top: 0
+
+  &__title
+    font-size: 24px
+    line-height: 1.1
+
+  &__ref
+    font-size: 0
+
+  &__link
+    font-size: 16px
+    letter-spacing: 1px
+    overflow: hidden
+    position: relative
+    display: inline-block
+    color: $brand-prime
+    text-decoration: none
+    &:hover
+      &:after
+        transform: translate3d(0, 0, 0)
+
+    .fa
+      margin-left: 6px
+
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      height: 1px
+      background: $brand-prime
+      transform: translate3d(-101%, 0, 0)
+      transition: all .25s ease
+
+  &__info
+    @media (min-width: 600px)
+      +span(8 of 12)
+      float: right
+      padding-left: $grid-gutter/2
+
+  &__role
+    font-size: 16px
+    color: $grey-color-light
+    @media (min-width: 600px)
+      +span(4 of 12)
+      padding-right: $grid-gutter/2
+      text-align: right
+
+  &__item:nth-child(2n)
+    text-align: right
+    @media (min-width: 600px)
+      .projects__info
+        float: left
+        padding-left: 0
+        padding-right: $grid-gutter/2
+        text-align: right
+      .projects__role
+        padding-right: 0
+        padding-left: $grid-gutter/2
+        text-align: left

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Страница акции ТаксовичкоФ",
+    "ref": "https://vovremya.taxovichkof.ru/",
+    "link": "vovremya.taxovichkof.ru",
+    "role": "Вёрстка",
+  },
+  {
+    "title": "ГрузовичкоФ",
+    "ref": "http://gruzovichkof.ru/",
+    "link": "gruzovichkof.ru",
+    "role": "Frontend-разработчик",
+  },
+  {
+    "title": "Кинотеатр им. М Горького",
+    "ref": "http://www.pechorakino.ru/",
+    "link": "pechorakino.ru",
+    "role": "Вёрстка, Программирование",
+  },
+  {
+    "title": "Косметологический центр",
+    "ref": "http://cosmetic-center.org/",
+    "link": "cosmetic-center.org",
+    "role": "Вёрстка",
+  },
+  {
+    "title": "Стоматология на Кутузова",
+    "ref": "http://www.fuks300400.ru/",
+    "link": "fuks300400.ru",
+    "role": "Вёрстка",
+  },
+  {
+    "title": "Фирма «Овен-Авто»",
+    "ref": "http://oven-auto.ru/",
+    "link": "oven-auto.ru",
+    "role": "Вёрстка, Программирование",
+  },
+  {
+    "title": "Торговый Дом Вестр",
+    "ref": "http://www.westr-komi.ru/",
+    "link": "westr-komi.ru",
+    "role": "Вёрстка",
+  },
+]

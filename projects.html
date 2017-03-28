@@ -3,3 +3,22 @@ layout: default
 title: PROJECTS | ALEX NESTEROV
 permalink: /projects/
 ---
+
+<div class="projects">
+  <div class="container">
+    <h1 class="projects__head">Проекты</h1>
+    <div class="projects__wrap">
+      {% for project in site.data.projects %}
+      <div class="projects__item">
+        <div class="projects__info">
+          <div class="projects__title">{{ project.title }}</div>
+          <div class="projects__ref">
+            <a href="{{ project.ref }}" rel="nofollow" target="_blank" class="projects__link">{{ project.link }}<i class="fa fa-external-link-square"></i></a>
+          </div>
+        </div>
+        <div class="projects__role">{{ project.role }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
