@@ -3,6 +3,25 @@
   width: 100%
   z-index: 1
 
+  &__menu
+    text-align: center
+
   &__logo
     padding: 60px 0 54px
     text-align: center
+
+.nav
+  padding-top: 15px
+  margin-left: -15px
+  &__link
+    margin-left: 15px
+    display: inline-block
+    font-size: 16px
+    font-weight: 600
+    color: $grey-color
+    text-decoration: none
+    text-transform: uppercase
+    transition: color .25s ease
+    &.-active,
+    &:hover
+      color: $brand-prime
