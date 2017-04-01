@@ -36,6 +36,9 @@ html
   max-width: $container
   margin-right: auto
   margin-left: auto
-  padding-left: floor(($grid-gutter / 2))
-  padding-right: ceil(($grid-gutter / 2))
+  padding-left: 40px
+  padding-right: 40px
   +clearfix
+  @media (min-width: 800px)
+    padding-left: floor(($grid-gutter / 2))
+    padding-right: ceil(($grid-gutter / 2))
