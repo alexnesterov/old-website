@@ -35,6 +35,9 @@ gulp.task('sass', function () {
     .pipe(cssnano({
       autoprefixer: false
     }))
+    .pipe(rename({
+      suffix: '.min',
+    }))
     .pipe(gulp.dest('_site/assets/styles'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('assets/styles/'));
@@ -43,7 +46,9 @@ gulp.task('sass', function () {
 // Compiles Scripts
 gulp.task('js', function () {
   return gulp.src('assets/scripts/main.js')
-    .pipe(rename('main.pack.js'))
+    .pipe(rename({
+      suffix: '.min',
+    }))
     .pipe(uglify())
     .pipe(gulp.dest('_site/assets/scripts'))
     .pipe(browserSync.reload({stream:true}))
