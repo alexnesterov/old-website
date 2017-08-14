@@ -1,12 +1,11 @@
 html
   box-sizing: border-box
-  position: relative
-  min-height: 100%
-  min-width: $container-min
+  min-width: 320px
 
 *,
 *:before,
 *:after
+  position: relative
   box-sizing: inherit
 
 ::selection
@@ -28,14 +27,3 @@ html
   color: $text-color
   background: $bg-color
   -webkit-font-smoothing: antialiased
-
-.container
-  max-width: $container
-  margin-right: auto
-  margin-left: auto
-  padding-left: 40px
-  padding-right: 40px
-  +clearfix
-  @media (min-width: 800px)
-    padding-left: floor(($grid-gutter / 2))
-    padding-right: ceil(($grid-gutter / 2))
