@@ -2,11 +2,13 @@
 <html lang="ru">
 {% include head.html %}
 <body class="page">
-  {% include header.html %}
-  <div class="main">
-    {{ content }}
+  <div class="layout">
+    {% include header.html %}
+    <main class="content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </div>
-  {% include footer.html %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="/assets/scripts/main.min.js"></script>
 </body>

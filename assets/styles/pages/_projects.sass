@@ -1,4 +1,5 @@
 .projects
+
   &__head
     margin: 0
     margin-bottom: 60px
@@ -53,29 +54,6 @@
       transform: translate3d(-101%, 0, 0)
       transition: all .25s ease
 
-  &__info
-    @media (min-width: 600px)
-      +span(8 of 12)
-      float: right
-      padding-left: $grid-gutter/2
-
   &__role
     font-size: 16px
     color: $grey-color-light
-    @media (min-width: 600px)
-      +span(4 of 12)
-      padding-right: $grid-gutter/2
-      text-align: right
-
-  &__item:nth-child(2n)
-    text-align: right
-    @media (min-width: 600px)
-      .projects__info
-        float: left
-        padding-left: 0
-        padding-right: $grid-gutter/2
-        text-align: right
-      .projects__role
-        padding-right: 0
-        padding-left: $grid-gutter/2
-        text-align: left
