@@ -1,9 +1,9 @@
 # My personal website
 
-[alexnesterov.ru](http://alexnesterov.ru/)
+[https://alexnesterov.github.io/old-website/](https://alexnesterov.github.io/old-website/)
 
 Built in Jekyll & hosted on GitHub Pages.
 
-<a href="http://alexnesterov.ru">
+<a href="https://alexnesterov.github.io/old-website/">
   <img src="assets/images/logo.png" alt="AN" width="120">
 </a>
